@@ -64,7 +64,7 @@ nav {
   height: 80vh;
 }
 .profile {
-  padding: 100px 5%;
+  padding: 300px 5%;
   margin-top: 0%;
   font-size: 30px;
   font-family: "Work Sans", sans-serif;
@@ -107,7 +107,7 @@ nav {
 }
 /*about section*/
 #about {
-  padding: px 0;
+  padding: 1px 0;
   color: white;
 }
 
@@ -117,9 +117,10 @@ nav {
   flex-wrap: wrap;
 }
 .container {
-  margin-top: 380px;
+  margin-top: 30px;
   margin-left: 80px;
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 .about_me {
   flex-basis: 5%;
@@ -183,4 +184,15 @@ p {
 }
 .tab-contents.active-tab {
   display: block;
+}
+
+/*services-tab*/
+#services {
+  padding: 30px 0;
+}
+.services-offered {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 0px;
 }
