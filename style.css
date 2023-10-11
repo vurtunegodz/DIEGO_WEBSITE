@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   position: sticky;
   padding: 10px 10%;
   top: 0;
@@ -53,9 +53,9 @@ nav {
 }
 .desktop-nav ul li a:hover::after {
   width: 100%;
-  background-color: black;
-  color: black;
-  box-shadow: 0 0 10px black;
+  background-color: #ff004f;
+  color: white;
+  box-shadow: 0 0 10px white;
 }
 #home {
   display: flex;
@@ -83,9 +83,104 @@ nav {
 .profile h1 span {
   color: #ff004f;
 }
-
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  margin: 1%;
+  margin-left: 0%;
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-1 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover {
+  cursor: pointer;
+  background: #ff004f;
+  color: white;
+}
 /*about section*/
 #about {
-  padding: 80px 0;
-  color: #ababab;
+  padding: px 0;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.container {
+  margin-top: 380px;
+  margin-left: 80px;
+  margin-right: 0px;
+}
+.about_me {
+  flex-basis: 5%;
+}
+.about_me img {
+  height: auto;
+  width: 350px;
+  border-radius: 20px;
+}
+.about_me_1 {
+  flex-basis: 73%;
+}
+.sub_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  font-family: "Montserrat", sans-serif;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500px;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.6s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: #ff004f;
+  font-size: 22px;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
 }

@@ -24,15 +24,63 @@
       <p>Hello, I am</p>
       <h1>Carl Joseph <span> Diego</h1>
       <p>Website Developer</p>
-      <button class="btn">
-         Lets Talk
-      </button>
+      <div class="btn-container"></div>
+      <button class="btn btn-color-1" onclick="location.href='./#contact'">
+         Lets Talk 
       </div>
     </div>
   </div>
+   <div id="about">
+       <div class="container">
+         <div class="row">
+           <div class="about_me">
+               <img src="Assets/aboutpic.png" alt="abt picture">
+           </div>
+           <div class="about_me_1">
+             <h1 class="sub_title">About Me</h1>
+             <p>My name is Carl, I was born and raised in the Philippines, and I am pursuing a degree in Information Technology at
+              <br>Technological Univeristy of the Philippines Manila. During my high school years, I took an interest in Web Development.
+              In fact, I continuously took classes in this subject area because I wanted to challenge myself and learn more. In addition,
+              I have gained<br> skills such as problem-solving, time management, 
+              and leadership. I value these skills because I strongly believe they will help<br> me be successful in my academic pursuits in Programming.
+              I used my time management skills to also work on my hobbies and interests. Some of my hobbies include playing an instrument. What is especially interesting about these
+              hobbies is that they help develop my soft skills, such as critical thinking and creativity.</p> 
 
-    </div>
-  </div>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Web Development</span><br>Expert</li>
+                  <li><span>Database and SQL</span><br>Expert</li>
+                  <li><span>Text Editors</span><br>Advanced</li>
+                  <li><span>Cloud Computing</span><br>Advanced</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+               <ul>
+                <li><span>Web Developer</span><br>ZONAMA Company<br>2021-2023</li>
+                <li><span>Programmer</span><br>XYZ Company<br>2017-2019</li>
+                <li><span>UI/UX Designer</span><br>MAETS Company<br>2020-2021</li>
+              </ul>
+              </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Tertiary</span><br>Technological University of the Philippines<br>2021 - Present</li>
+                <li><span>Secondary</span><br>Parañaque National High School - Main<br>2014-2018</li>
+                <li><span>Secondary</span><br>United Christan Academy<br>2018 - 2020</li>
+                <li><span>Primary</span><br>ICLA Christian Academy<br>2008-2011</li>
+                <li><span>Primary</span><br>Parañaque Elementary School Central<br>2011-2014</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>    
     </section>
+  <script src="script.js"></script>
   </body>
 </html>
