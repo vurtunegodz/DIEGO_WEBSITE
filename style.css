@@ -20,6 +20,7 @@ body {
   position: sticky;
   padding: 10px 10%;
   top: 0;
+  z-index: 100;
 }
 
 nav {
@@ -55,7 +56,7 @@ nav {
   width: 100%;
   background-color: #ff004f;
   color: white;
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px black;
 }
 #home {
   display: flex;
@@ -246,12 +247,101 @@ a {
 
 #portfolio {
   padding: 50px 0;
+  margin-left: 75px;
+  margin-right: 70px;
+}
+.work-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 30px;
+}
+.works {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
 }
 .sub-title_2 {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
-  padding-left: 575px;
+  padding-left: 500px;
 }
 .sub-title_2 span {
   color: #ff004f;
+}
+
+.work-lists img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 15px;
+  transition: transform 0.5s;
+}
+.descript h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descript {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 16px;
+  transition: height 0.6s;
+}
+.works:hover img {
+  transform: scale(1.1);
+}
+.works:hover .descript {
+  height: 100%;
+}
+
+/*contact section*/
+.contact-left {
+  flex-basis: 35%;
+}
+.contact-right {
+  flex-basis: 100%;
+}
+
+.contact-left p {
+  margin-top: 10px;
+}
+.contact-left .icon1 {
+  height: auto;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.social-icons .icon {
+  height: auto;
+  width: 60px;
+  display: inline-block;
+  transition: transform 0.6s;
+}
+.social-icons .icon:hover {
+  transform: translateY(-5px);
+}
+.btn.btn-color-2 {
+  display: inline-block;
+}
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-2:hover {
+  cursor: pointer;
+  background: #ff004f;
+  color: white;
 }
