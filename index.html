@@ -8,16 +8,36 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav class="desktop-nav">
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <nav id="desktop-nav">
+      <div class="logo"><a href="#" onclick="window.location.reload();">Vurtune<span>Godz</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#socials" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <section id="Home">
+    <nav id="hamburger-nav">
+      <div class="logo">Vurtune<span>Godz</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#Home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#portfolio" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#socials" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  <section id="Home">
     <div class="section_pic-container">
       <img src="./Assets/IMG_3535 edited2.png" alt="Profile Picture">
     </div>
@@ -87,19 +107,16 @@
           <img src="Assets/uxui design.png" alt="ux icon">
           <h2>UX/UI Designing</h2>
           <p>Designers aim to create interfaces which users find easy to use and pleasurable. Web designing is my forte</p>
-          <a href="#">Learn more</a>
         </div>
         <div>
           <img src="Assets/photoshop icon.png" alt="ps icon">
           <h2>Photoshop Editing</h2>
           <p>Photoshop is an image creation, graphic design and photo editing software developed by Adobe.</p>
-          <a href="#">Learn more</a>
         </div>
         <div>
           <img src="Assets/pc fix icon.png" alt="pc fx icon">
           <h2>Computer Diagnosis</h2>
           <p>a method of testing a computer hardware device or program to ensure it is working as it should be. </p>
-          <a href="#">Learn more</a>
          </div>
     </div>
   </div>
@@ -146,7 +163,7 @@
         </div>
     </div>
 </div>   
-<div id="contact"></div>
+<div id="contact1"></div>
 <div class="contact_me">
   <p> Let me get you a Beautiful Website.</p>
       <div class="btn-container">
@@ -160,7 +177,24 @@
      </div>
     </div>
   </div>
-<footer>
+  <section id="contact">
+    <h1>Get in <span>touch</span></h1>
+    <div class="contact_container container">
+      <form>
+        <div class="form-top">
+          <input type="text" placeholder="Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="text" placeholder="Email" required>
+          <input type="text" placeholder="Number" required>
+        </div>
+        <div class="form-bottom">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn-color-3">Submit now</button>
+        </div>
+      </form>
+    </div>
+  </section>
+<div id="socials">
   <p>Carl Joseph B. Diego</p>
   <p>For More Information, Follow my Social Media Accounts Below</p>
    <div class="social-icons">
@@ -170,7 +204,7 @@
       <img src="Assets/linkedin.png" alt="link icon"class="icon" onclick=" window.open('https://www.linkedin.com/in/carl-joseph-diego-23291b242/')">
    </div>
    <p class="end">Copyright by Carl Joseph Diego</p>
-</footer>
+
     </section>
   <script src="script.js"></script>
   </body>
