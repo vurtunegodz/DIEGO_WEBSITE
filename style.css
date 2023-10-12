@@ -504,7 +504,7 @@ p {
 }
 form {
   width: 80%;
-  margin: auto;
+  margin-left: 100px;
   display: in;
 }
 
