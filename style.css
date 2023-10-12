@@ -87,18 +87,35 @@ nav {
 }
 #desktop-nav .logo {
   font-family: "Montserrat", sans-serif;
+  color: black;
 }
 #desktop-nav .logo span {
   color: #ff004f;
 }
-.logo a {
+.logo {
   font-size: 2rem;
   position: relative;
   text-decoration: none;
 }
-
-.logo:hover {
-  cursor: pointer;
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+#desktop-nav .logo::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.6s;
+}
+#desktop-nav .logo:hover::after {
+  width: 100%;
+  background-color: #ff004f;
+  color: white;
+  box-shadow: 0 0 10px black;
 }
 
 /*hamburger nav*/
